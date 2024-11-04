@@ -1,0 +1,149 @@
+.dashBoard{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    /* border-radius: 15px; */
+    /* padding: 1rem; */
+}
+
+.sub-menu{
+    width:15%;
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.lower-box{
+    margin-top: 2rem;
+}
+
+.sub-menu-btns{
+    position: relative;
+    margin-top: 1.5rem;
+    transition: transform 0.5s ease-out ;
+    overflow: hidden;
+}
+
+.sub-menu-btns img{
+    position: absolute;
+    top: 0;
+}
+
+.sub-menu-btns:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sub-menu-btns p{
+    margin-left: 2.5rem;
+    font-size: 1.4rem;
+}
+
+.sub-menu-btns img{
+    width: 2rem;
+}
+
+.content{
+    width: 85%;
+    background-color: rgb(249, 249, 249);
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+    /* padding-left: 1rem; */
+}
+
+.content-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.input-date{
+    background-color: rgb(226, 225, 225);
+    padding: 0 1rem;
+    border: none;
+    border-radius: 12px;
+    /* font-size: .9rem; */
+}
+
+.input-date:hover{
+    cursor: pointer;
+}
+
+.content-body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    margin-top: 1.5rem;
+}
+
+.content-box{
+    /* border: 1px solid black; */
+    width: 25rem;
+    height: 10rem;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.5s ease-out;
+}
+
+.content-box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.content-box img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.user-count{
+    flex-grow: 2;
+    font-size: 2rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    font-weight: bolder;
+}
+
+.content-box img + p{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+.content-box:nth-child(1) img,
+.content-box:nth-child(3) img{
+    background-color: lightgreen;
+    padding: .5rem;
+    border-radius: 12px;
+}
+
+.content-box:nth-child(2) img,
+.content-box:nth-child(4) img,
+.content-box:nth-child(5) img,
+.content-box:nth-child(6) img{
+    background-color: lightblue;
+    padding: .5rem;
+    border-radius: 12px;
+}
+
+.user-count-blue{
+    color: rgb(60, 164, 199);
+}
+
+.user-count-green{
+    color: lightgreen;
+
+}

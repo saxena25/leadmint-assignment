@@ -1,0 +1,71 @@
+.container-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.form{
+    width: 35rem;
+    height: 50vh;
+    margin: auto;
+    border: .5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+.form h2{
+    text-align: center;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* gap: 1rem; */
+}
+
+form input{
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: .9rem;
+    height: 2rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    /* padding-left: .5rem; */
+    /* color: black; */
+}
+
+form label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: .2rem;
+    color: white;
+}
+
+.form-submit{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: rgb(16, 46, 220);
+    color: white;
+    transition: transform 0.3s ease-out;
+    overflow: hidden;
+}
+
+.form-submit:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: green;
+}
