@@ -1,0 +1,37 @@
+[
+    {
+        "label": "Day 1",
+        "Registrations": 740,
+        "Referrals": 350
+    },
+    {
+        "label": "Day 2",
+        "Registrations": 700,
+        "Referrals": 300
+    },
+    {
+        "label": "Day 3",
+        "Registrations": 600,
+        "Referrals": 260
+    },
+    {
+        "label": "Day 4",
+        "Registrations": 520,
+        "Referrals": 210
+    },
+    {
+        "label": "Day 5",
+        "Registrations": 500,
+        "Referrals": 240
+    },
+    {
+        "label": "Day 6",
+        "Registrations": 550,
+        "Referrals": 240
+    },
+    {
+        "label": "Day 7",
+        "Registrations": 150,
+        "Referrals": 70
+    }
+]

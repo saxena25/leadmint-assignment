@@ -1,4 +1,28 @@
 import "./DashBoard.css";
+import { Line } from "react-chartjs-2";
+import Registration from "../data/Registration.json";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+);
 
 function DashBoard() {
   return (
@@ -63,7 +87,59 @@ function DashBoard() {
             <p className="user-count user-count-blue">71291</p>
           </div>
         </div>
-        <div></div>
+        <div className="chart-graph">
+          <Line
+            data={{
+              labels: Registration.map((ele) => ele.label),
+              datasets:[
+                {
+                  label: "Registration",
+                  data: Registration.map((ele) => ele.Registrations),
+                  backgroundColor: "rgba(60, 168, 249, 0.8)",
+                  borderColor: "rgba(60, 168, 249, 0.8)",
+                  // fill: false
+                },
+                {
+                  label: "Referrals",
+                  data: Registration.map((ele) => ele.Referrals),
+                  backgroundColor: "#e32057",
+                  borderColor: "#e32057",
+                  // fill: true
+                }
+              ]
+            }}
+            options={{
+              responsive: true,
+              plugins: {
+                title: {
+                  display: true,
+                  text: "Last 7 Days: Registration vs Referrals",
+                },
+                legend: {
+                  position: "top",
+                },
+              },
+              scales: {
+                x: {
+                  type: "category",
+                  title: {
+                    display: true,
+                    text: "Date",
+                  },
+                },
+                y: {
+                  beginAtZero: true,
+                  title: {
+                    display: true,
+                    text: "Count",
+                  },
+                }
+              }
+            }}
+            height={250}
+            width={800}
+          />
+        </div>
       </div>
     </div>
   )
